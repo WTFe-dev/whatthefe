@@ -1,38 +1,23 @@
 {
   "name": "whatthefe",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/code-riffs/whatthefe.git",
-  "author": "Giri Jeedigunta <giri.jeedigunta@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^2.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "autoprefixer": "^10.4.20",
-    "clean-css": "^5.3.3",
-    "cross-env": "^7.0.3",
-    "html-minifier": "^4.0.0",
-    "luxon": "^3.5.0",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.2.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.5.3",
-    "terser": "^5.39.0"
-  },
+  "description": "whatthefe",
   "scripts": {
-    "clean": "rm -rf _site",
-    "dev:eleventy": "eleventy --serve",
-    "dev": "npm-run-all clean --parallel dev:*",
-    "build:eleventy": "eleventy",
-    "build": "cross-env NODE_ENV=production npm-run-all clean build:eleventy",
-    "serve": "eleventy --serve"
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,json,md,njk,css}\""
   },
-  "keywords": [
-    "blog"
-  ],
-  "engines": {
-    "node": ">=22.0.0"
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "clean-css": "^5.0.0",
+    "eslint": "^8.0.0",
+    "html-minifier-terser": "^7.0.0",
+    "luxon": "^3.5.0",
+    "markdown-it": "^12.0.0",
+    "markdown-it-anchor": "^8.0.0",
+    "prettier": "^2.0.0",
+    "terser": "^5.0.0"
   }
 }

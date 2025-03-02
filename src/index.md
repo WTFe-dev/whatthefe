@@ -1,10 +1,8 @@
 ---
-# src/index.md
 layout: layouts/base.njk
 title: Home
-description: Welcome to my modern Eleventy blog
 ---
 
-# Index
+# Welcome to My 11ty Blog
 
-Welcome to my Eleventy blog, a place where I share my thoughts, experiences, and knowledge.
+This is the homepage with some minimal dummy content.
