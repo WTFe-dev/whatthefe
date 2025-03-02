@@ -1,0 +1,30 @@
+{
+    "title": "Modern Eleventy Blog",
+    "description": "A modern blog built with Eleventy and Tailwind CSS",
+    "url": "https://example.com",
+    "author": {
+      "name": "Your Name",
+      "email": "your.email@example.com"
+    },
+    "locale": "en",
+    "lang": "en",
+    "buildTime": "lastModified",
+    "navigation": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "About",
+        "url": "/about/"
+      },
+      {
+        "text": "Blog",
+        "url": "/posts/first-post/"
+      }
+    ],
+    "social": {
+      "twitter": "yourtwitterhandle",
+      "github": "yourgithubhandle"
+    }
+  }

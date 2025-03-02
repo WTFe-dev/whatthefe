@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default('en') }}" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+  
+  <!-- Meta Tags -->
+  <meta name="description" content="{{ description | default(site.description) }}">
+  <meta name="author" content="{{ site.author.name }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{{ description | default(site.description) }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
+  <meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
+  <meta name="twitter:description" content="{{ description | default(site.description) }}">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  
+  <!-- Feed -->
+  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
+  
+  <!-- JS -->
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body class="bg-white dark:bg-secondary-900 text-secondary-900 dark:text-white min-h-screen flex flex-col">
+  <!-- Header -->
+  {% include "components/header.njk" %}
+  
+  <!-- Main content -->
+  <main class="flex-grow container mx-auto px-4 py-8 md:px-6 lg:px-8 max-w-4xl">
+    {{ content | safe }}
+  </main>
+  
+  <!-- Footer -->
+  {% include "components/footer.njk" %}
+</body>
+</html>
