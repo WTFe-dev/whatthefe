@@ -11,6 +11,7 @@
     "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "autoprefixer": "^10.4.20",
+    "clean-css": "^5.3.3",
     "cross-env": "^7.0.3",
     "html-minifier": "^4.0.0",
     "luxon": "^3.5.0",
@@ -20,7 +21,7 @@
     "postcss": "^8.5.3",
     "terser": "^5.39.0"
   },
-"scripts": {
+  "scripts": {
     "clean": "rm -rf _site",
     "dev:eleventy": "eleventy --serve",
     "dev": "npm-run-all clean --parallel dev:*",
@@ -33,5 +34,5 @@
   ],
   "engines": {
     "node": ">=22.0.0"
-  }  
+  }
 }

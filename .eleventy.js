@@ -1,6 +1,7 @@
 // .eleventy.js
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
+const CleanCSS = require("clean-css");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
@@ -56,7 +57,9 @@ module.exports = function (eleventyConfig) {
             let minified = htmlmin.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,
-                collapseWhitespace: true
+                collapseWhitespace: true,
+                minifyJS: true,
+                minifyCSS: true
             });
             return minified;
         }
