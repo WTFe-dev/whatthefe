@@ -30,7 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/images/favicon.png">
@@ -41,12 +41,12 @@
   <!-- JS -->
   <script defer src="/assets/js/main.js"></script>
 </head>
-<body class="bg-white dark:bg-secondary-900 text-secondary-900 dark:text-white min-h-screen flex flex-col">
+<body>
   <!-- Header -->
   {% include "components/header.njk" %}
   
   <!-- Main content -->
-  <main class="flex-grow container mx-auto px-4 py-8 md:px-6 lg:px-8 max-w-4xl">
+  <main>
     {{ content | safe }}
   </main>
   

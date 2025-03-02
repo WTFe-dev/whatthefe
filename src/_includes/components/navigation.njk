@@ -1,8 +1,8 @@
 <nav aria-label="Main Navigation">
-  <ul class="flex space-x-6">
+  <ul>
     {% for item in site.navigation %}
       <li>
-        <a href="{{ item.url }}" class="text-secondary-700 dark:text-secondary-200 hover:text-primary-600 dark:hover:text-primary-400 transition-colors {% if page.url == item.url %}font-medium text-primary-600 dark:text-primary-400{% endif %}">
+        <a href="{{ item.url }}">
           {{ item.text }}
         </a>
       </li>
