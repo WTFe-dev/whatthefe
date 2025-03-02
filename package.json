@@ -1,0 +1,15 @@
+{
+  "name": "whatthefe",
+  "version": "1.0.0",
+  "repository": "https://github.com/code-riffs/whatthefe.git",
+  "author": "Giri Jeedigunta <giri.jeedigunta@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  }
+}
