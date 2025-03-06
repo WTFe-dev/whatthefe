@@ -24,10 +24,10 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install deps
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Build WTFe
-        run: yarn build
+        run: NODE_ENV=production yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

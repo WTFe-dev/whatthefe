@@ -3,9 +3,7 @@ title: Genesis
 description: Genesis - The WTF(e) Moment
 date: 2025-03-06
 tags:
-  - about
   - tech-stack
-  - blog
   - genesis
 ---
 

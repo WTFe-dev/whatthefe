@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Welcome to What The Frontend. In a world of infinite blog-verses, this is where frontend, AI, and chaos collide.",
   "scripts": {
-    "build": "NODE_ENV=production eleventy",
-    "start": "eleventy --serve",
+    "build": "cross-env NODE_ENV=production eleventy",
+    "start": "cross-env NODE_ENV=development eleventy --serve",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{js,json,md,njk,css}\""
   },
@@ -21,6 +21,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "clean-css": "^5.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
     "html-minifier-terser": "^7.0.0",
     "luxon": "^3.5.0",
