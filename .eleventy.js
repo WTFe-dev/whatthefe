@@ -79,7 +79,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles");
 
   const isProd = process.env.NODE_ENV === 'production';
-  const pathPrefix = isProd ? '/whatthefe/' : '/';
+  const pathPrefix = isProd ? '/' : '/';
 
   eleventyConfig.addFilter('withPrefix', function (url) {
     return `${pathPrefix}tags/${url}`
