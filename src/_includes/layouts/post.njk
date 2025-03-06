@@ -14,7 +14,7 @@ layout: layouts/base.njk
         <span>
           {% for tag in tags %}
             {% if tag != "posts" %}
-              <a href="{{ tag | withPrefix }}">#{{ tag }}</a>
+              <a href="/tags/{{ tag }}">#{{ tag }}</a>
             {% endif %}
           {% endfor %}
         </span>

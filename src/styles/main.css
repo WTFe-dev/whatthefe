@@ -1,3 +1,21 @@
+/* Custom fonts - https://www.recursive.design/ */
+
+@font-face {
+	font-family: 'RecVar';
+	font-style: oblique 0deg 15deg;
+	font-weight: 300 1000;
+	font-display: swap;
+	src: url('/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
+	unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+	}
+
+	@font-face {
+	font-family: 'Ranchers';
+	src: url('/assets/fonts/ranchers-v17-latin-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	}
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/

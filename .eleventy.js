@@ -40,7 +40,6 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
-
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
     try {
       const minified = await terser.minify(code);
@@ -78,18 +77,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/styles");
 
-  const isProd = process.env.NODE_ENV === 'production';
-  const pathPrefix = isProd ? '/' : '/';
-
-  eleventyConfig.addFilter('withPrefix', function (url) {
-    return `${pathPrefix}tags/${url}`
-  });
-
-  console.log('## isProd - ', isProd);
-  console.log('## pathPrefix - ', pathPrefix);
-
   return {
-    pathPrefix: pathPrefix,
     dir: {
       input: "src",
       output: "dist",
