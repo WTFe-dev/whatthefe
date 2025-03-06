@@ -14,5 +14,5 @@ Here’s a mix of the newest ramblings, random things I’m trippinnn on, and al
 ## What’s Buzzing?
 
 {% for post in collections.posts %}
- - **[{{ post.data.title }}]({{ post.url | url }})** /{{ post.date | readableDate }}
+ - **[{{ post.data.title }}]({{ post.url }})** /{{ post.date | readableDate }}
 {% endfor %}

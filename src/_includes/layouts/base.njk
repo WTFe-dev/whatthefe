@@ -5,26 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}{% if title %} | {{ title }}{% endif %}</title>
 
-  <link rel="preload" href="{{ '/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2' | url }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="{{ '/assets/fonts/ranchers-v17-latin-regular.woff2' | url }}" as="font" type="font/woff2" crossorigin="anonymous">
-  <style>
-    @font-face {
-      font-family: 'RecVar';
-      font-style: oblique 0deg 15deg;
-      font-weight: 300 1000;
-      font-display: swap;
-      src: url('{{ "/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2" | url }}') format('woff2');
-      unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
-      }
-
-      @font-face {
-      font-family: 'Ranchers';
-      src: url('{{ "/assets/fonts/ranchers-v17-latin-regular.woff2" | url }}') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-      }
-  </style>
+  <link rel="preload" href="/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/ranchers-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <meta name="description" content="{{ description | default(site.description) }}">
   <meta name="author" content="{{ site.author }}">
   <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
@@ -32,8 +14,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
-  <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
-  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.ico' | url }}">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
 </head>
 <body>
   {% include "components/header.njk" %}

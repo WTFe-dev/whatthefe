@@ -3,7 +3,7 @@ pagination:
   data: collections.tagList
   size: 1
   alias: tag
-permalink: "{{ '/tags/' + tag | slug | withPrefix }}/index.html"
+permalink: "{{ '/tags/' + tag | slug }}/index.html"
 layout: layouts/base.njk
 title: "Tag: {{ tag }}"
 ---
@@ -12,7 +12,7 @@ title: "Tag: {{ tag }}"
 
 <ul>
   {% for post in collections[tag] %}
-    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
   {% endfor %}
 </ul>
 
