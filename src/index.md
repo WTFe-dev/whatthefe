@@ -16,9 +16,9 @@ Here’s a mix of the newest ramblings, random things I’m trippinnn on, and al
 {% for post in collections.posts %}
     {% set postUrl = post.url.split('/') %}
     {% set subfolder = post.url.split('/')[2] %}
-    {% if postUrl.length > 4 and subfolder and subfolder != '' %}
-    - **[{{ post.data.title }}]({{ post.url }})** / {{ subfolder }} / {{ post.date | readableDate }}
-    {% else %}
-    - **[{{ post.data.title }}]({{ post.url }})** / {{ post.date | readableDate }}
-    {% endif %}
+        {% if postUrl.length > 4 and subfolder and subfolder != '' %}
+            - **[{{ post.data.title }}]({{ post.url }})** / {{ subfolder }} / {{ post.date | readableDate }}
+        {% else %}
+            - **[{{ post.data.title }}]({{ post.url }})** / {{ post.date | readableDate }}
+        {% endif %}
 {% endfor %}
