@@ -18,15 +18,15 @@
     "url": "https://github.com/WTFe-dev/whatthefe.git"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "clean-css": "^5.0.0",
-    "eslint": "^8.0.0",
+    "eslint": "^9.21.0",
     "html-minifier-terser": "^7.0.0",
     "luxon": "^3.5.0",
-    "markdown-it": "^12.0.0",
+    "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
-    "prettier": "^2.0.0",
+    "prettier": "^3.5.3",
     "terser": "^5.0.0"
   }
 }
