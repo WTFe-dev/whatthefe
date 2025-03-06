@@ -32,6 +32,9 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
+        with:
+          name: dist-artifact
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest
