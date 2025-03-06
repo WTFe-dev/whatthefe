@@ -3,54 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-  
-  <!-- Meta Tags -->
+  <title>{{ site.title }}{% if title %} | {{ title }}{% endif %}</title>
+
+  <link rel="preload" href="/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/ranchers-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
   <meta name="description" content="{{ description | default(site.description) }}">
-  <meta name="author" content="{{ site.author.name }}">
-  
-  <!-- Open Graph -->
+  <meta name="author" content="{{ site.author }}">
   <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
   <meta property="og:description" content="{{ description | default(site.description) }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:creator" content="@{{ site.social.twitter }}">
-  <meta name="twitter:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
-  <meta name="twitter:description" content="{{ description | default(site.description) }}">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-  
-  <!-- Feed -->
-  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}">
-  
-  <!-- JS -->
-  <script defer src="/assets/js/main.js"></script>
+
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
 </head>
 <body>
-  <!-- Header -->
   {% include "components/header.njk" %}
-  
-  <!-- Main content -->
+
   <main>
+    <div class="main-container">
     {{ content | safe }}
+    </div>
   </main>
-  
-  <!-- Footer -->
+
   {% include "components/footer.njk" %}
 </body>
 </html>

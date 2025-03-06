@@ -2,23 +2,22 @@
 layout: layouts/base.njk
 ---
 
-<article>
-  <header>
-    <h1>{{ title }}</h1>
-    <div>
-      <time datetime="{{ date | dateToISO }}">{{ date | readableDate }}</time>
+<article class="posts-wrapper">
+  <time datetime="{{ date | dateToISO }}">{{ date | readableDate }}</time>
+
+  {{ content | safe }}
+
+  <hr />
+  <h2>Tags</h2>
+  <p>
       {% if tags %}
-        <span>•</span>
         <span>
           {% for tag in tags %}
             {% if tag != "posts" %}
-              <a href="/tags/{{ tag }}">{{ tag }}</a>
+              <a href="/tags/{{ tag }}">#{{ tag }}</a>
             {% endif %}
           {% endfor %}
         </span>
       {% endif %}
-    </div>
-  </header>
-
-  {{ content | safe }}
+  </p>
 </article>
