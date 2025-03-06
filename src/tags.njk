@@ -3,14 +3,26 @@ pagination:
   data: collections.tagList
   size: 1
   alias: tag
-permalink: "tags/{{ tag | slug }}/index.html"
 layout: layouts/base.njk
 title: "Tag: {{ tag }}"
 ---
 
 <h1>Posts tagged "{{ tag }}"</h1>
+
 <ul>
-  {% for post in collections.all | filterTag(tag) %}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {% for post in collections[tag] %}
+    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
   {% endfor %}
 </ul>
+
+{% if collections[tag] | length == 0 %}
+  <p>No posts found for this tag.</p>
+{% endif %}
+
+{% if pagination.previous %}
+  <a href="{{ pagination.previous.url | url }}">Previous</a>
+{% endif %}
+
+{% if pagination.next %}
+  <a href="{{ pagination.next.url | url }}">Next</a>
+{% endif %}
