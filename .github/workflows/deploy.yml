@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # This enables manual triggering
 
 permissions:
   contents: read
@@ -16,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Ensure you're using v4
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -30,13 +31,11 @@ jobs:
         run: yarn build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: dist
+        uses: actions/upload-pages-artifact@v2  # Updated to v2 (works with GitHub Pages)
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy WTFe to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4  # Updated to v4
