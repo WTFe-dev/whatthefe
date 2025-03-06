@@ -1,5 +1,9 @@
 {
-  "title": "My 11ty Blog",
+  "title": "WTFe",
   "year": "2025",
-  "description": "A minimal blog built with Eleventy and Markdown"
+  "description": "In a world of infinite blog-verses, this is where frontend, AI, and chaos collide.",
+  "footerText": "Copy it, remix it, make it better—because nothing is original anyway!",
+  "author": "Giri Jeedigunta",
+  "url": "https://wtfe.dev",
+  "github": "https://github.com/giri-jeedigunta"
 }

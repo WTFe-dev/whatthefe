@@ -1,0 +1,261 @@
+ /* Custom fonts - https://www.recursive.design */
+ /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
+ @font-face {
+	font-family: 'RecVar';
+	font-style: oblique 0deg 15deg;
+	font-weight: 300 1000;
+	font-display: swap;
+	src: url('/assets/fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
+	unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+  }
+
+  @font-face {
+	font-family: 'Ranchers';
+	src: url('/assets/fonts/ranchers-v17-latin-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+  }
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+body {
+	background-color: #222222;
+	color: rgb(249, 244, 218);
+	font-family: 'RecVar'
+}
+
+p {
+	font-size: 1.2em;
+}
+
+a {
+	color: rgb(249, 244, 218);
+	text-decoration: underline;
+	&:visited {
+		color: rgb(249, 244, 218);
+	}
+	&:hover {
+		color: #fcba28
+	}
+}
+
+h1 {
+	font-size: 2.25em;
+  }
+  
+  h2 {
+	font-size: 2em;
+	line-height: 1.4em;
+  }
+  
+  h3 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+  }
+  
+  h4 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+  }
+  
+  h5 {
+	font-size: 1.25em;
+	line-height: 1.4em;
+  }
+  
+  h6 {
+	font-size: 1.1em;
+	line-height: 1.4em;
+  }
+  
+
+  p, time {
+	margin: 5px 5px 15px;
+  }
+
+  h1 {
+	margin: 10px 5px;
+  }  
+
+
+  h2, h3, h4, h5, h6 {
+	margin: 35px 5px 10px;
+  }
+
+  hr {
+	margin-top: 40px
+  }
+
+  main {
+	flex: 1;
+  }
+
+  header {
+	padding: 0 6px;
+  }
+  
+  .header-wrappper {
+	box-shadow: #f9f4da 4.8px 4.8px 0px 0px;
+	border: 1px solid #f9f4da;
+	border-top: 0;
+	border-left: 0;
+	padding: 10px 25px;
+	display: flex;
+	align-items: center;
+	border-radius: .3rem;
+  }
+
+  .header-wrappper h1 {
+	margin: 0;
+	font-family: "Ranchers", serif;
+	font-style: normal;	
+  }
+  
+  .glitch {
+	position: relative;
+	font-size: 1.65em;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #f9f4da;
+	text-decoration: none;
+	display: inline-block;
+  }
+  
+  /* Glitch Layers */
+  .glitch::before,
+  .glitch::after {
+	content: attr(data-glitch);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.85;
+	z-index: -1;
+  }
+  
+  /* Glitch Hover Effect */
+  .glitch:hover::before {
+	color: #0ff;
+	z-index: -1;
+	transform: translate(-2px, -2px);
+	animation: glitch-shift 0.7s infinite alternate;
+  }
+  
+  .glitch:hover::after {
+	color: #ff00ff;
+	z-index: -2;
+	transform: translate(2px, 2px);
+	animation: glitch-shift 0.7s infinite alternate-reverse;
+  }
+  
+  /* Keyframes */
+  @keyframes glitch-shift {
+	0% { transform: translate(0); }
+	20% { transform: translate(-3px, 3px); }
+	40% { transform: translate(-3px, -3px); }
+	60% { transform: translate(3px, 3px); }
+	80% { transform: translate(3px, -3px); }
+	100% { transform: translate(0); }
+  }
+  
+  .main-container {
+	filter: drop-shadow(#fcba28 7px 5px 0px);
+	border: .12rem solid #231f20;
+	color: #231f20;
+	padding: 2em;
+	border-radius: .3rem;
+	background-color: #f9f4da;
+	width: calc(100% - 20px); /* 100% width minus 40px margin on both sides */
+	margin: 25px auto;
+  }
+  .main-container a {
+	color: #231f20;
+	text-decoration: underline;
+	&:visited {
+		color: #231f20;
+	}
+	&:hover {
+		color: #fcba28
+	}
+  }
+  footer {
+	text-align: center;
+	font-size: 0.7em;
+  }
+
+  footer p {
+	margin: 0 0 3px 0;
+  }
+
+  a.header-anchor {
+	color: #231f20;
+	text-decoration: none;
+	&:visited {
+		color: #231f20;
+	}
+	&:hover {
+		color: #fcba28
+	}	
+  }
+
+  ul {
+	list-style: none;
+	padding-left: 5px;
+  }
+  
+  ul li {
+	position: relative;
+	padding-left: 30px;
+	font-size: 1.25em;
+  }
+  
+  ul li::before {
+	content: '\1F37A';
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.15em;
+  }

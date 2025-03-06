@@ -1,12 +1,21 @@
 {
   "name": "whatthefe",
   "version": "1.0.0",
-  "description": "whatthefe",
+  "description": "Welcome to What The Frontend. In a world of infinite blog-verses, this is where frontend, AI, and chaos collide.",
   "scripts": {
-    "build": "eleventy",
+    "build": "NODE_ENV=production eleventy",
     "start": "eleventy --serve",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{js,json,md,njk,css}\""
+  },
+  "author": {
+    "name": "Giri Jeedigunta",
+    "email": "giri.jeedigunta@gmail.com",
+    "url": "https://wtfe.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WTFe-dev/whatthefe.git"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -16,7 +25,7 @@
     "html-minifier-terser": "^7.0.0",
     "luxon": "^3.5.0",
     "markdown-it": "^12.0.0",
-    "markdown-it-anchor": "^8.0.0",
+    "markdown-it-anchor": "^9.2.0",
     "prettier": "^2.0.0",
     "terser": "^5.0.0"
   }

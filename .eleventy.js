@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
   };
   let mdLib = markdownIt(mdOptions).use(markdownItAnchor, {
     permalink: true,
-    permalinkBefore: true,
+    permalinkBefore: false,
     permalinkSymbol: "#",
   });
   eleventyConfig.setLibrary("md", mdLib);
@@ -39,8 +39,11 @@ module.exports = function (eleventyConfig) {
   });
 
   // CSS minification filter
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
+  eleventyConfig.addTransform("cssmin", function (content, outputPath) {
+    if (outputPath && outputPath.endsWith(".css")) {
+      return new CleanCSS({}).minify(content).styles;
+    }
+    return content;
   });
 
   // JavaScript minification filter
@@ -79,12 +82,15 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO();
   });
 
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/styles");
+
   return {
     dir: {
       input: "src",
       output: "dist",
       includes: "_includes",
-      data: "data"
+      data: "_data"
     },
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
