@@ -14,31 +14,26 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Install deps
         run: yarn install
-      
+
       - name: Build WTFe
         run: yarn build
-      
-      - name: List contents of dist folder (debug)
-        run: |
-          echo "Listing files in dist folder:"
-          ls -R dist
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-  
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
