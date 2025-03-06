@@ -14,14 +14,15 @@ Make sure you have the following installed:
 1. **Install Dependencies**  
    In your project directory, run the following command to install the necessary dependencies:
 
-   ```bash
+```bash
    yarn install
 ```
 
-2. Run the Development Server
+2. **Run the Development Server**
 Once the dependencies are installed, start the local development server with:
+
 ```bash
 yarn start
-````
+```
 
 This will start the server at http://localhost:8080
