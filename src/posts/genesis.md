@@ -15,8 +15,7 @@ I love writing about the stuff I work on, but let’s be real **—time and prio
 
 **AI could take care of all the boring, mind-numbing tasks, while I dive headfirst into the wild, unpredictable, and insanely fun creative madness?**
 
-Boom 💥. Neurons fired 🧠. Sparks flew ⚡. And in that moment, I thought—**WTF?!**
-**And so, WTFe happened—like a glitch in The Matrix.**
+Boom 💥. Neurons fired 🧠. Sparks flew ⚡. And in that moment, **WTFe happened—like a glitch in The Matrix.**
 
 Do I know exactly what I’ll write? **Nope**. Do I know how much time I’ll commit? **Also nope**. But that’s the fun part—I’ll figure it out as I go, and maybe, just maybe, some of you will be part of the madness too. 😉
 
