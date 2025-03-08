@@ -1,5 +1,5 @@
 ---
-title: Genesis
+title: Genesis - The WTFe Moment
 description: Genesis - The WTFe Moment
 date: 2025-03-06
 tags:
@@ -7,7 +7,7 @@ tags:
   - genesis
 ---
 
-# Genesis: The WTFe Moment
+# Genesis - The WTFe Moment
 
 Every blog has an origin story—this is mine.
 
