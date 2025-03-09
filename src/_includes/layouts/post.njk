@@ -7,17 +7,24 @@ layout: layouts/base.njk
 
   {{ content | safe }}
 
+  <p>/<a href="{{ site.linkedin }}" target="_blank" title="By {{ site.author }}">{{ site.shortName }}</a></p>
+
+  <hr />
+  {% set discussionLink = "https://github.com/WTFe-dev/whatthefe/discussions/new?category=wtfe-dev-posts&title=" + title %}
+  <h2>Join the discussion:</h2>
+  <p><strong>Got thoughts on this post or anything else in the WTFe universe? 🤔</strong> </p>
+  <p>Or maybe you’re up for collaborating on something cool? 🔥. I’m all ears and would love to hear from you! 😎</p>
+  <a href="{{ discussionLink }}" title="Join the discussion on WTFe.dev Github" target="_blank">Let's discuss</a>
+
   <hr />
   <h2>Tags</h2>
-  <p>
+  <p class="tags-wrapper">
       {% if tags %}
-        <span>
           {% for tag in tags %}
             {% if tag != "posts" %}
-              <a href="/tags/{{ tag }}">#{{ tag }}</a>
+              <a href="/tags/{{ tag }}" title="Posts on #{{ tag }}">#{{ tag }}</a>
             {% endif %}
           {% endfor %}
-        </span>
       {% endif %}
   </p>
 </article>

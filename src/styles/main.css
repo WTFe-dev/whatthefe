@@ -123,7 +123,7 @@ h1 {
 
 
   h2, h3, h4, h5, h6 {
-	margin: 35px 5px 10px;
+	margin: 35px 5px 15px;
   }
 
   hr {
@@ -223,7 +223,7 @@ h1 {
   }
   footer {
 	text-align: center;
-	font-size: 0.7em;
+	font-size: 0.65em;
   }
 
   footer p {
@@ -248,14 +248,50 @@ h1 {
   
   ul li {
 	position: relative;
-	padding-left: 30px;
 	font-size: 1.25em;
+	padding: 2px 0 2px 30px
   }
   
   ul li::before {
-	content: '\1F37A';
+	content: '\21AA';
 	position: absolute;
 	left: 0;
 	top: 0;
 	font-size: 1.15em;
   }
+
+  code {
+	background-color: #231f20;
+	color: #f9f4da;
+	padding: 2px 5px 3px;
+	border-radius: 3px;
+  }
+
+  pre code {
+	padding: 15px;
+    border-radius: 6px;
+    display: block;
+    font-size: 1rem;
+	width: 75%;
+	filter: drop-shadow(rgb(243 139 163) 7px 5px 0px);
+	border: .12rem solid #231f20;	
+  }
+
+.custom-list-wrapper p {
+	position: relative;
+	font-size: 1.25em;
+	padding: 2px 0 2px 30px
+  }
+  
+.custom-list-wrapper p::before {
+	content: '\21AA';
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.15em;
+}
+
+.tags-wrapper a {
+	margin: 0 10px 0 0;
+	padding: 1px 0;
+}

@@ -13,12 +13,14 @@ Here’s a mix of the newest ramblings, random things I’m trippinnn on, and al
 
 ## What’s Buzzing?
 
-{% for post in collections.posts %}
-    {% set postUrl = post.url.split('/') %}
-    {% set subfolder = post.url.split('/')[2] %}
-        {% if postUrl.length > 4 and subfolder and subfolder != '' %}
-            - **[{{ post.data.title }}]({{ post.url }})** / {{ subfolder }} / {{ post.date | readableDate }}
-        {% else %}
-            - **[{{ post.data.title }}]({{ post.url }})** / {{ post.date | readableDate }}
-        {% endif %}
-{% endfor %}
+<div class="custom-list-wrapper">
+    {% for post in collections.posts | reverse %}
+        {% set postUrl = post.url.split('/') %}
+        {% set subfolder = postUrl[2] %}
+            {% if postUrl.length > 4 and subfolder and subfolder != '' %}
+                **[{{ post.data.title }}]({{ post.url }})** / [#{{ subfolder }}](/tags/{{ subfolder }}/) / {{ post.date | readableDate }}
+            {% else %}
+                **[{{ post.data.title }}]({{ post.url }})** / {{ post.date | readableDate }}
+            {% endif %}
+    {% endfor %}
+</div>
