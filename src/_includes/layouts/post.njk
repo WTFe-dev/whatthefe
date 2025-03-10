@@ -7,14 +7,10 @@ layout: layouts/base.njk
 
   {{ content | safe }}
 
-  <p>/<a href="{{ site.linkedin }}" target="_blank" title="By {{ site.author }}">{{ site.shortName }}</a></p>
-
   <hr />
   {% set discussionLink = "https://github.com/WTFe-dev/whatthefe/discussions/new?category=wtfe-dev-posts&title=" + title %}
   <h2>Join the discussion:</h2>
-  <p><strong>Got thoughts on this post or anything else in the WTFe universe? 🤔</strong> </p>
-  <p>I’m all ears and would love to hear from you! 😎</p>
-  <a class="move-left-5px" href="{{ discussionLink }}" title="Join the discussion on WTFe.dev Github" target="_blank">Let's discuss</a>
+  <p><strong>Got thoughts on this post or anything else in the WTFe universe? 🤔</strong> I’m all ears and would love to hear from you! 😎 <a class="move-left-2px" href="{{ discussionLink }}" title="Join the discussion on WTFe.dev Github" target="_blank">Let's discuss</a></p>
 
   <hr />
   <h2>Tags</h2>
