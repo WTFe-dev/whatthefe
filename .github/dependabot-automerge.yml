@@ -1,0 +1,14 @@
+- name: Get PR details
+  id: pr_details
+  run: |
+    PR_TITLE=$(jq -r '.pull_request.title' "$GITHUB_EVENT_PATH")
+    PR_BODY=$(jq -r '.pull_request.body' "$GITHUB_EVENT_PATH")
+
+    if [[ "$PR_TITLE" == *"Bump"* || "$PR_TITLE" == *"fix(deps):"* ]] && \
+       [[ "$PR_BODY" == *"severity: high"* || "$PR_BODY" == *"severity: critical"* ]]; then
+      echo "PR is from Dependabot with High/Critical severity."
+      echo "should_merge=true" >> $GITHUB_ENV
+    else
+      echo "PR does not meet criteria."
+      echo "should_merge=false" >> $GITHUB_ENV
+    fi
