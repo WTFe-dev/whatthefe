@@ -1,3 +1,6 @@
+![CI Status](https://github.com/WTFe-dev/whatthefe/actions/workflows/deploy.yml/badge.svg?branch=main)
+
+
 # WTFe.dev
 
 Welcome to the WTFe.dev! This is where frontend, AI, and chaos collide. Here's a quick guide to get you up and running locally.
@@ -26,3 +29,14 @@ yarn start
 ```
 
 This will start the server at http://localhost:8080
+
+## Tech stack
+[11ty + Markdown](https://v0-7-0.11ty.dev/docs/languages/markdown/)
+[Analytics](https://www.goatcounter.com)
+[Fonts](https://www.recursive.design/)
+
+
+## Hosting
+[Github pages](https://github.com/WTFe-dev/whatthefe)
+[Vercel](https://vercel.com/home)
+
