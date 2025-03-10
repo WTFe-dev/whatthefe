@@ -1,4 +1,4 @@
-name: Deploy WTFe to GitHub Pages
+name: Build+Deploy WTFe
 on:
   push:
     branches:
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Setup Pages
+      - name: Setup GH Pages
         uses: actions/configure-pages@v4
 
       - name: Install deps
