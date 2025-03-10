@@ -5,20 +5,32 @@ const terser = require("terser");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItContainer = require("markdown-it-container");
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  let mdOptions = {
+  const markdownLib = markdownIt({
     html: true,
     breaks: true,
     linkify: true,
-  };
-  let mdLib = markdownIt(mdOptions).use(markdownItAnchor, {
+    typographer: true,
+  })
+
+  let extendedMarkdownLib = markdownLib.use(markdownItAnchor, {
     permalinkBefore: false,
     permalinkSymbol: "#",
   });
-  eleventyConfig.setLibrary("md", mdLib);
+  const callouts = ["note", "tip", "important", "warning", "caution"];
+  callouts.forEach(callout => {
+    markdownLib.use(markdownItContainer, callout, {
+      render: (tokens, idx) =>
+        tokens[idx].nesting === 1
+          ? `<blockquote class="${callout}">\n`
+          : "</blockquote>\n",
+    });
+  });
+  eleventyConfig.setLibrary("md", extendedMarkdownLib);
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
