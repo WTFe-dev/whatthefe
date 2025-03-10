@@ -25,6 +25,7 @@ Navigating a large codebase shouldn't feel like deciphering ancient scripts. Ent
 - **Easily target extensions** - Apply rules to specific file types while ignoring others.
 - **Simple setup** – Minimal setup with simple rules managed in one single or multiple `.ls-lint.yml` files.
 - **Performance** – Super fast, running instantly on even large projects.
+- **Agnostic support** – Works with any programming language—`React, Next.js, Go, Java`, or anything else.
 
 
 Checkout all the features – [Official docs](https://ls-lint.org/2.3/getting-started/introduction.html#key-facts).
@@ -90,7 +91,7 @@ Instead of using `PascalCase`, you can define your own patterns using `regex`. R
 
 #### Examples
 
-Here’s a comparison of good and bad naming conventions for a `Foobar` React component as per the above rules.
+Here are some quick basic examples of good and bad naming conventions for a `Foobar` React component. More examples with different rules are [here](https://github.com/giri-jeedigunta/wtfe.dev/blob/main/docs/ls-lint/rules-example.md)
 
 ✅ **Good:**
 ```
