@@ -34,6 +34,6 @@ This will start the server at http://localhost:8080
  - [11ty + Markdown](https://v0-7-0.11ty.dev/docs/languages/markdown/)
  - [Github pages](https://github.com/WTFe-dev/whatthefe)
  - [Vercel](https://vercel.com/home)
- - [Analytics](https://www.goatcounter.com)
+ - [Cloudflare Analytics](https://www.cloudflare.com/web-analytics/)
  - [Fonts](https://www.recursive.design/)
 
