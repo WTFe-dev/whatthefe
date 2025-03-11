@@ -99,6 +99,9 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk"
+    dataTemplateEngine: "njk",
+    eleventyComputed: {
+      title: (data) => `#${data.tag ? data.tag : "noTag"}`
+    }
   };
 };

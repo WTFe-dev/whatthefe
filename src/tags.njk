@@ -1,14 +1,17 @@
 ---
+layout: layouts/base.njk
 pagination:
   data: collections.tagList
   size: 1
   alias: tag
-permalink: "{{ '/tags/' + tag | slug }}/index.html"
-layout: layouts/base.njk
-title: "Tag: {{ tag }}"
+permalink: "/tags/{{ tag | slug }}/index.html"
+eleventyComputed:
+  title: "#{{ tag }}"
 ---
 
-<h1>Posts tagged "{{ tag }}"</h1>
+<title>{{ title }}</title>
+
+<h1>Posts tagged "#{{ tag }}"</h1>
 
 <ul>
   {% for post in collections[tag] %}
