@@ -1,7 +1,7 @@
 ---
 title: Github copilot hacks
 description: Github copilot hacks
-date: 2025-03-14
+date: 2025-03-17
 tags:
   - frontend
   - tooling
