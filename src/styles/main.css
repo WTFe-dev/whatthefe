@@ -307,6 +307,13 @@ ul li::before {
 	font-size: 1.15em;
 }
 
+
+ol li {
+	position: relative;
+	font-size: 1.25em;
+	padding: 0.125rem 0 0.125rem 0;
+}
+
 code {
 	background-color: var(--color-primary);
 	color: var(--color-light);
