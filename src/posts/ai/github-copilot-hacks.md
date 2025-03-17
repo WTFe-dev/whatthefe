@@ -36,7 +36,8 @@ And here’s what I got:
 
 ![Frustrated Droid](/assets/images/r2-d2.gif)
 
-At one point, I thought, *"Maybe I should just write the code myself."* But I wanted to squeeze every bit of productivity out of Copilot, so the battle continued—**until I found something that changed the game.**
+At one point, I thought, *"Maybe I should just write the code myself."* 
+But I wanted to squeeze every bit of productivity out of Copilot, so the battle continued—**until I found something that changed the game.**
 
 ## A New Hope: Code Generation Instructions
 
@@ -63,7 +64,7 @@ Here’s how to bring order to the chaos:
 
 <br />
 
-3. Now, define specific rules:
+3. Now, define specific rules in simple and plain english:
 
 <br />
 
@@ -78,15 +79,15 @@ Here’s how to bring order to the chaos:
 
 <br />
 
-Now, when I give the same instruction—*"Generate a function to fetch an API and return JSON"*—the result is much better and closely follows my expectations. The code is in Typescript without using `any` and it generated an arrow function as expected.
+After this setup, when I gave the same instruction—*"Generate a function to fetch an API and return JSON"*—the result is much better and closely follows my expectations. **The code is in Typescript without using `any` and it generated an arrow function as expected.**
 
 ![With Code Instructions](/assets/images/03_code_instructions.jpg)
 
-There’s no limit to how many instructions you can add, but keep them small and precise for best results.
+There you have it! Isn’t this so much better than writing long prompts? This approach works really well—just remember, you can add as many instructions as you want, but keeping them small and precise gives the best results.
 
 <br />
 
-## Using Instruction Files
+## Using Instruction from File
 
 Instead of modifying `settings.json` every time, you can store your instructions in a separate file and reference it.
 
@@ -162,3 +163,7 @@ No more AI-generated chaos—just smarter, more predictable Copilot suggestions.
 **The force (of good code) is with you. Use it wisely. ✨👨‍💻🚀**
 
 ![Debugging Instructions](/assets/images/yoda.gif)
+
+<br />
+
+**Reference:** [Official Docs](https://code.visualstudio.com/docs/copilot/copilot-customization)
