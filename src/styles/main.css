@@ -309,7 +309,6 @@ ul li::before {
 
 
 ol li {
-	position: relative;
 	font-size: 1.25em;
 	padding: 0.125rem 0 0.125rem 0;
 }
