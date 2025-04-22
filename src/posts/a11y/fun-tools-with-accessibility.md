@@ -90,6 +90,5 @@ In Firefox, we also have a useful feature to simulate vision issues. Whether its
 
 Improving accessibility **doesn’t have to be overwhelming**. With the right tools, you can quickly spot issues, understand their impact, and ship more inclusive experiences with confidence. Whether you're just getting started or refining an existing site, these tools can help make accessibility a more seamless part of your workflow. This isn’t the end of the list—there are many more tools, cool tips, and techniques out there. If you know of any, feel free to join the discussion and share!
 
-... here's a pic of Me and Byeongji from the Winter Party 2024. **You know, the one where we were definitely not talking about accessibility. 😆**
-
+[Giri]... here's a pic of Me and Byeongji from the Winter Party 2024. **You know, the one where we were definitely not talking about accessibility. 😆**
 <img src="/assets/images/me+byeongji.jpg" width="25%" alt="Giri(left) Byeongji(right)" title="Giri(left) Byeongji(right)"/>
