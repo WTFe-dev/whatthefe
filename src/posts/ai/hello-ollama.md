@@ -14,15 +14,11 @@ tags:
 
 # Hello, Ollama 👋
 
-How cool is it that you can now run LLMs **locally** on your machine?
-*(I’m talking only about Mac for now—it’s every dev's dojo 🖥️🍎)*
-
 We’ve gone from ***"hello world"*** to ***"hello, full-blown language model on my terminal"*** way too fast.
-And honestly? I **ooooollaaamaaaa** the ability to mess around with models right from the terminal.
+How cool is it that you can now run LLMs **locally** on your machine?
 
+And honestly? I **Oollaammaa** the ability to mess around with models right from the terminal.
 Feels like **Matrix Reloaded**, 2025 edition. Yes, I still reference *The Matrix*—it’s a masterpiece, fight me. 😎
-
-<br />
 
 ## Why Ollama? 🤔
 
@@ -47,7 +43,7 @@ Whether you’re prototyping ideas, crafting AI masterpieces, or just curious—
 
 ## Let's Get Started 🚀
 
-Here’s how you can get `Ollama` running on your Mac in minutes:
+Here’s how you can get `Ollama` running on your Mac in minutes *(I’m talking only about Mac for now—it’s every dev's dojo 🖥️🍎, isn’t it? 😎🚀)*:
 
 ### Install
 
