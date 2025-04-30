@@ -52,7 +52,7 @@ brew install ollama
 ```
 
 ### Run
-My personal favorite right ... `phi4`
+My personal favorite ... `phi4`
 ```bash
 ollama run phi4
 ```
