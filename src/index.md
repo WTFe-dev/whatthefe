@@ -30,5 +30,5 @@ Here’s a mix of the newest ramblings, random things I’m trippinnn on, and al
 <br />
 
 {% set discussionLink = "https://github.com/WTFe-dev/whatthefe/discussions/categories/wtfe-dev-posts?discussions_q=is%3Aopen+category%3A%22WTFe.dev+%7C%C2%A0Posts%22" %}
-<p><strong>Got thoughts on anything in the WTFe universe? 🤔</strong> Or maybe you’re up for collaborating on something cool? 🔥.</p>
-<p><a class="move-left-2px" href="{{ discussionLink }}" title="Let’s talk—I’m all ears! on WTFe.dev Github" target="_blank">Let’s talk—I’m all ears!</a></p>
+<p><strong>Got thoughts on anything in the WTFe.dev universe? 🤔</strong> Or maybe you’re up for collaborating on something cool? 🔥.</p>
+<p><a class="move-left-2px" href="{{ discussionLink }}" title="Let’s talk—I’m all ears! on WTFe.dev Github" target="_blank">Let’s &lt;talk /&gt;</a></p>
