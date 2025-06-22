@@ -18,11 +18,11 @@ tags:
 
 Every summer, I obsess over BBQ. That's it.
 
-I try out a few new dishes from around the world. But here’s the rub (pun intended): most of these recipes **aren’t in English**. That means **I spend way too much time trying to decode ingredients** I’ve never heard of, convert Fahrenheit to Celsius (my oven hates me for this), and scroll through someone’s life story just to find out how much cumin to use.
+Trying global BBQ recipes is a **full-on adventure** where I live 🇸🇪. Recipes call for brown sugar, but all I find is “farinsocker” hiding in a corner at ICA. Converting Fahrenheit feels like rocket science, and I scroll through someone’s Texas road trip just to learn how much cumin to use. Spice aisle at Coop? Still no Memphis rub — just me, confused, holding “paprikapulver rökt” and questioning life. 😃
 
 **It’s enough to kill the vibe.**
 
-**But this year’s different.** We’re living in the **AI-everything** geeez. And I figured — if AI can write poems, build apps, and beat humans at chess, it can definitely help me decode a recipe. So I did what any dev with a hunger for food and a seat on the AI hype train would do...
+**But this year’s different.** We’re living in the **AI-everything** era — geez. And I figured — if AI can write poems, build apps, and beat humans at chess, it can definitely help me decode a recipe. So I did what any dev with a hunger for food and a seat on the AI hype train would do...
 
 
 <br />
@@ -33,11 +33,9 @@ So here’s what **ChefGPT** does:
 
  - You drop in a **YouTube recipe URL**
  - It grabs the content using `YoutubeLoader`
- - Breaks the text into chunks so the AI can process it better
- - Stores everything in `ChromaDB` using embeddings
  - Runs a `RAG (Retrieval-Augmented Generation)` pipeline to extract recipe details
  - Translates ingredients + measurements to local-friendly formats
- - Serves it all up as clean `MD` (print-ready, copy-pasteable, dev-friendly)
+ - Serves it all up as clean `Markdown` format (print-ready, copy-pasteable, dev-friendly)
 
 <br />
 
