@@ -18,11 +18,11 @@ tags:
 
 Every summer, I obsess over BBQ. That's it.
 
-Trying global BBQ recipes is a **full-on adventure** where I live 🇸🇪. But here’s the rub (pun intended): Recipes are in all languages / formats say the recipe calls for brown sugar, but all I find is “farinsocker” hiding in a corner at ICA. Converting Fahrenheit feels like rocket science, and I scroll through someone’s Texas road trip just to learn how much cumin to use. Spice aisle at Coop? Still no Memphis rub — just me, confused, holding “paprikapulver rökt” and questioning life. 😃
+Trying global BBQ recipes is a **full-on adventure** where I live 🇸🇪. But here’s the rub (pun intended): Recipes are in all languages / formats... say the recipe calls for brown sugar, but all I find is “farinsocker” hiding in a corner at ICA. Converting Fahrenheit feels like rocket science, and I scroll through someone’s Texas road trip just to learn how much cumin to use. Spice aisle at Coop? Still no Memphis rub — just me, confused, holding “paprikapulver rökt” and questioning life. 😃
 
 **It’s enough to kill the vibe.**
 
-**But this year’s different.** We’re living in the **AI-everything** geeez. And I figured — if AI can write poems, build apps, and beat humans at chess, it can definitely help me decode a recipe. So I did what any dev with a hunger for food and a seat on the AI hype train would do...
+**But this year’s different.** We’re living in the **AI-everything** era - geeezz. And I figured — if AI can write poems, build apps, and beat humans at chess, **it can definitely help me decode a recipe**. So I did what any dev with a hunger for food and a seat on the AI hype train would do... **I created Chef GPT**
 
 
 
