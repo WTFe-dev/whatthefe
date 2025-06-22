@@ -136,12 +136,12 @@ const documents = await splitter.splitDocuments(rawDocuments);
 ```
 <br />
 
-I'm still learning how to tune these — **it often takes a bit of trial and error to find what works best** depending on your content. For recipe videos, I found `1500/200` works reasonably well, but feel free to experiment.
-
  - `chunkSize` defines how big each chunk of text should be (in characters). Bigger chunks give more context, but risk hitting token limits. Smaller ones are safer, but may lose meaning.
  - `chunkOverlap` ensures that some part of the previous chunk is included in the next. This helps maintain context between chunks, especially when ideas span across boundaries.
 
 <br />
+
+I'm still learning how to tune these — **it often takes a bit of trial and error to find what works best** depending on your content. For recipe videos, I found `1500/200` works reasonably well, but feel free to experiment.
 
 Here is how the extracted content looks:
 
