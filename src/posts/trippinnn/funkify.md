@@ -12,8 +12,7 @@ tags:
 
 # Funkify
 
-Just stumbled onto [Funkify](https://www.funkify.org/) and I’m *actually* blown away.  
-This tool simulates different types of disabilities *in the browser*—from dyslexia to low vision to motor challenges—and it’s such an eye-opener.
+Learned about [Funkify](https://www.funkify.org/) in a recent accessibility workshop and I’m *actually* blown away. This tool simulates different types of disabilities *in the browser*—from dyslexia to low vision to motor challenges—and it’s such an eye-opener.
 
 With the [EU Accessibility Act](https://ec.europa.eu/social/main.jsp?catId=1202) around the corner, there's been a ton of buzz (and pressure) on getting a11y right—and honestly, it's about time.
 
