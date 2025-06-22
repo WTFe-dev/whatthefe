@@ -141,3 +141,5 @@ Until then... **✌️ Peace out.✌️ dev-verse explorers**
 
 *Welcome to the era of local AI.
 Probably I’m already late and feeling old—but hey, at least I showed up. 😅🤖*
+
+![Hello, Ollama 👋](/assets/images/ollama.gif)
